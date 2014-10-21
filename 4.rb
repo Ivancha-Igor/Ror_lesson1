@@ -1,35 +1,35 @@
 var = [621, 445, 147, 159, 430, 222, 482, 44, 194, 522, 652, 494, 14, 126, 532, 387, 441, 471, 337, 446, 18, 36, 202, 574, 556, 458, 16, 139, 222, 220, 107, 82, 264, 366, 501, 319, 314, 430, 55, 336]
-
+puts "---------------------------------------"
 # identify the number of elements in the array
 puts var.length
-
+puts "---------------------------------------"
 # flip the array
 puts var.to_s.reverse
-
+puts "---------------------------------------"
 # find the largest number
 puts var.max
-
+puts "---------------------------------------"
 # find the minimum number
 puts var.min
-
+puts "---------------------------------------"
 # sort from smallest to largest
 puts var.sort.to_s
-
+puts "---------------------------------------"
 # sort from largest to smallest
 puts var.sort {|a, b| b <=> a }.to_s
-
+puts "---------------------------------------"
 # remove all odd numbers
 puts var.find_all{ |elem| elem%2==0 }.to_s
-
+puts "---------------------------------------"
 # numbers that have no remainder is divided into three
 puts var.find_all{ |elem| elem%3==0 }.to_s
-
+puts "---------------------------------------"
 # remove from the array numbers that recur
 puts var.uniq.to_s
-
+puts "---------------------------------------"
 # divide each element 10, resulting in the elements do not have to be rounded up to a whole
 puts var.map {|elem| elem.to_f/10}.to_s
-
+puts "---------------------------------------"
 # get a new array, which would contain in itself the letters of the English alphabet, which is the sequence number in our array
 alfabet = ('a'..'z').to_a 
 var1 = []
@@ -39,7 +39,7 @@ var.each do |elem|
   end  
 end
 puts var1
-
+puts "---------------------------------------"
 # swap the minimum and maximum elements of an array
 var1 = var
 max_elem = var1.max
@@ -49,11 +49,11 @@ index_min = var1.index(min_elem)
 var1 [index_min] = max_elem
 var1 [index_max] = min_elem
 puts var1.to_s
-
+puts "---------------------------------------"
 # locate items that are in front of the minimum number of array
 min_el = var.min
 min_index = var.index(min_el)
 puts var[min_index-1]
-
+puts "---------------------------------------"
 # find three of the least element
 puts var.sort.uniq.first 3
