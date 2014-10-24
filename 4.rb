@@ -4,7 +4,7 @@ puts "---------------------------------------"
 puts var.length
 puts "---------------------------------------"
 # flip the array
-puts var.to_s.reverse
+puts var.reverse.to_s
 puts "---------------------------------------"
 # find the largest number
 puts var.max
