@@ -1,1 +1,3 @@
-puts ARGV[0].scan(/./).inject(0){|a,b| a+b.to_i}
+puts 'Введите любое число'
+n = gets.chomp
+puts n.scan(/./).inject(0){|a,b| a+b.to_i}
